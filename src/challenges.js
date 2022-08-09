@@ -27,8 +27,19 @@ function footballPoints(vitorias, empates) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  let counter = 1;
+
+  console.log(
+    array.sort(function (a, b) {
+      return b - a;
+    }),
+  );
+
+  for (let index = 1; array[index - 1] === array[index]; index += 1) {
+    counter += 1;
+  }
+  return counter;
 }
 
 // Desafio 7
@@ -103,7 +114,7 @@ function decode(codigo) {
 
 // Desafio 10
 function techList() {
-  
+  // seu código aqui
 }
 
 module.exports = {
