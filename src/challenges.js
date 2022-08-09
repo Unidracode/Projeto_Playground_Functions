@@ -60,16 +60,50 @@ function fizzBuzz(arrayNumbers) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(codigo) {
+  const vogais = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5
+  };
+
+  let result = '';
+
+  for (let index of codigo) {
+    if (vogais[index]) {
+      result += vogais[index];
+    } else {
+      result += index;
+    }
+  }
+  return result;
 }
-function decode() {
-  // seu código aqui
+function decode(codigo) {
+  const numbers = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+};
+  let result = '';
+
+  for (let index of codigo) {
+    if (numbers[index]) {
+      result += numbers[index];
+    } else {
+      result += index;
+    }
+  }
+
+  return result;
 }
 
 // Desafio 10
 function techList() {
-  // seu código aqui
+  
 }
 
 module.exports = {
