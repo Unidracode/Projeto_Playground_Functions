@@ -27,27 +27,18 @@ function footballPoints(vitorias, empates) {
 }
 
 // Desafio 6
-function highestCount(arrayNumeros) {
-  let maiorNumero = 0;
-  let vezesRepetidas = 0;
-
-  for (let index in arrayNumeros) {
-    if (arrayNumeros[index] > maiorNumero) {
-      maiorNumero = arrayNumeros[index];
-    }
-  }
-
-  for (let index2 in arrayNumeros) {
-    if (maiorNumero === arrayNumeros[index2]) {
-      vezesRepetidas += 1;
-    }
-  }
-  return vezesRepetidas;
+function highestCount() {
+  // seu código aqui
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)) {
+    return 'cat1';
+  } if (Math.abs(mouse - cat1) > Math.abs(mouse - cat2)) {
+    return 'cat2';
+  }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
