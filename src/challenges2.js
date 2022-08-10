@@ -4,8 +4,12 @@ function generatePhoneNumber() {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(linhaA, linhaB, linhaC) {
+  let checkA = linhaA < linhaB + linhaC && linhaA > Math.abs(linhaB - linhaC);
+  let checkB = linhaB < linhaA + linhaC && linhaB > Math.abs(linhaA - linhaC);
+  let checkC = linhaC < linhaB + linhaA && linhaC > Math.abs(linhaB - linhaA);
+
+  return checkA && checkB && checkC;
 }
 
 // Desafio 13
